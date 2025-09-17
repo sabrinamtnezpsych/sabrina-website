@@ -2125,11 +2125,13 @@ button,
   }
 
   /* Banner */
+  @media screen and (max-width: 736px) {
   #banner {
     flex-direction: column-reverse;
     padding: 2em 1.5em;
     justify-content: center;
     align-items: center;
+    background-color: #E2725B; 
   }
 
   #banner .content {
@@ -2159,7 +2161,6 @@ button,
     border-radius: 50%;
   }
 
-  /* Botones */
   #banner ul.actions {
     flex-direction: column;
     gap: 0.8em;
