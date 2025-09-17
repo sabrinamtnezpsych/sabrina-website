@@ -2336,3 +2336,59 @@ html, body {
     align-items: center;
   }
 }
+@media screen and (max-width: 736px) {
+  #banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1.5em;
+    background-color: #E2725B !important; /* force terracotta */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #banner .content {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1.5em;
+  }
+
+  #banner h1 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+
+  #banner .image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 0 1.5em 0;
+  }
+
+  #banner .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+
+  #banner ul.actions {
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  #banner ul.actions li {
+    width: 70%;
+    max-width: 200px;
+  }
+
+  #banner ul.actions a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
