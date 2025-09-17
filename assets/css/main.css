@@ -2133,13 +2133,13 @@ button,
   box-sizing: border-box;
 }
 
-#banner > .inner {
+#banner .inner {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-#banner > .inner > div:first-child {
+#banner .content {
   flex: 1;
   min-width: 280px;
   padding-left: 3em;
@@ -2155,7 +2155,7 @@ button,
   color: white;
 }
 
-#banner > .inner > div:last-child {
+#banner .image {
   flex: 1;
   min-width: 280px;
 }
@@ -2170,13 +2170,13 @@ button,
 
 /* ===== Banner Mobile ===== */
 @media screen and (max-width: 736px) {
-  #banner > .inner {
+  #banner .inner {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
 
-  #banner > .inner > div:first-child {
+  #banner .content {
     width: 100%;
     text-align: center;
     padding: 0;
