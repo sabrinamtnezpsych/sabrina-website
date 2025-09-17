@@ -2096,70 +2096,35 @@ button,
         width: 5em; } }
 
 @media screen and (max-width: 736px) {
+  /* Header */
   #header {
     padding-top: 4em;
-    flex-direction: column; 
-    align-items: center;   
+    flex-direction: column;
+    align-items: center;
   }
 
   #header .logo {
-    font-size: 1.5em;      
-    margin: 0.5em 0;       
+    font-size: 1.5em;
+    margin: 0.5em 0;
     text-align: center;
   }
 
   #header .icons {
-    position: relative;     
+    position: relative;
     right: 0;
     top: 0;
-    text-align: center;    
+    text-align: center;
     height: auto;
     line-height: normal;
     margin-top: 0.5em;
   }
+
   #header > * {
     width: 100%;
     box-sizing: border-box;
   }
-}
 
-/* Banner */
-@media screen and (max-width: 736px) {
-  #banner {
-    flex-direction: column-reverse;
-    padding: 4em 2em 2em 2em;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #banner .content {
-    padding-left: 0;
-    width: 100%;
-    text-align: center;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
-
-  #banner h1 {
-    font-size: 1.8em;
-    margin-top: 0.25em;
-  }
-
-  #banner .image {
-    margin: 1.5em 0 2em 0;
-    width: 100%;
-    height: auto;
-    max-height: 40vh;
-  }
-
-  #banner .image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-  }
-}
-@media screen and (max-width: 736px) {
+  /* Banner */
   #banner {
     flex-direction: column-reverse;
     padding: 2em 1.5em;
@@ -2191,9 +2156,10 @@ button,
     height: auto;
     object-fit: cover;
     object-position: center;
-    border-radius: 50%; /* si quieres que la foto sea circular */
+    border-radius: 50%;
   }
 
+  /* Botones */
   #banner ul.actions {
     flex-direction: column;
     gap: 0.8em;
