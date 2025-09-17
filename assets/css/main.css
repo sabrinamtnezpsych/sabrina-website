@@ -2125,8 +2125,7 @@ button,
   }
 
   /* Banner */
-  /* Banner Desktop */
-#banner {
+  #banner {
   background-color: #E2725B;
   padding: 6em 4em 4em 4em;
   width: 100%;
@@ -2161,7 +2160,7 @@ button,
   border-radius: 50%;
 }
 
-/* Banner Mobile */
+/* Mobile */
 @media screen and (max-width: 736px) {
   #banner .inner {
     flex-direction: column-reverse;
