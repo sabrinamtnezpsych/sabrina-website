@@ -2128,9 +2128,6 @@ button,
 /* ===== Banner Desktop ===== */
 #banner {
   background-color: #E2725B;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   padding: 6em 4em 4em 4em;
   width: 100%;
   box-sizing: border-box;
@@ -2147,6 +2144,7 @@ button,
   min-width: 280px;
   padding-left: 3em;
   padding-right: 20px;
+  box-sizing: border-box;
   color: white;
 }
 
@@ -2172,6 +2170,8 @@ button,
 
 #banner ul.actions a {
   text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5em;
 }
 
 /* ===== Banner Mobile ===== */
@@ -2189,12 +2189,7 @@ button,
     margin-bottom: 1.5em;
   }
 
-  #banner h1 {
-    font-size: 1.8em;
-    margin-bottom: 1em;
-  }
-
-  #banner .image {
+  #banner img.profile-pic {
     width: 80%;
     max-width: 250px;
     height: auto;
@@ -2215,13 +2210,12 @@ button,
   }
 
   #banner ul.actions a {
+    color: white;
     display: block;
     width: 100%;
     text-align: center;
-    color: white;
   }
 }
-
 /* Footer */
 #footer .copyright {
   color: #9fa3a6;
