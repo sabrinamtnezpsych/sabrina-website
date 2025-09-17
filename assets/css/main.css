@@ -2125,7 +2125,7 @@ button,
   }
 
   /* Banner */
-  /* ===== Banner Desktop ===== */
+  /* Banner Desktop */
 #banner {
   background-color: #E2725B;
   padding: 6em 4em 4em 4em;
@@ -2144,15 +2144,8 @@ button,
   min-width: 280px;
   padding-left: 3em;
   padding-right: 20px;
+  color: white;
   box-sizing: border-box;
-  color: white;
-}
-
-#banner h1,
-#banner h2,
-#banner p,
-#banner ul.actions a {
-  color: white;
 }
 
 #banner .image {
@@ -2160,7 +2153,7 @@ button,
   min-width: 280px;
 }
 
-#banner img.profile-pic {
+#banner .image img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -2168,7 +2161,7 @@ button,
   border-radius: 50%;
 }
 
-/* ===== Banner Mobile ===== */
+/* Banner Mobile */
 @media screen and (max-width: 736px) {
   #banner .inner {
     flex-direction: column-reverse;
@@ -2183,7 +2176,7 @@ button,
     margin-bottom: 1.5em;
   }
 
-  #banner img.profile-pic {
+  #banner .image img {
     width: 80%;
     max-width: 250px;
     height: auto;
@@ -2191,7 +2184,6 @@ button,
   }
 
   #banner ul.actions {
-    display: flex;
     flex-direction: column;
     gap: 0.8em;
     align-items: center;
