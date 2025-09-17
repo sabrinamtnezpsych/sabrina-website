@@ -2125,8 +2125,9 @@ button,
   }
 
   /* Banner */
-  #banner {
-  background-color: #E2725B;
+  /* ===== Banner ===== */
+#banner {
+  background-color: #E2725B !important;
   padding: 6em 4em 4em 4em;
   width: 100%;
   box-sizing: border-box;
@@ -2154,51 +2155,51 @@ button,
 
 #banner .image img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: auto !important;
+  object-fit: cover !important;
   object-position: center;
   border-radius: 50%;
 }
 
-/* Mobile */
+/* ===== Mobile ===== */
 @media screen and (max-width: 736px) {
   #banner .inner {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column-reverse !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   #banner .content {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 1.5em;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin-bottom: 1.5em !important;
   }
 
   #banner .image img {
-    width: 80%;
-    max-width: 250px;
-    height: auto;
-    margin-bottom: 1.5em;
+    width: 80% !important;
+    max-width: 250px !important;
+    height: auto !important;
+    margin-bottom: 1.5em !important;
   }
 
   #banner ul.actions {
-    flex-direction: column;
-    gap: 0.8em;
-    align-items: center;
-    margin-top: 1em;
+    flex-direction: column !important;
+    gap: 0.8em !important;
+    align-items: center !important;
+    margin-top: 1em !important;
   }
 
   #banner ul.actions li {
-    width: 70%;
-    max-width: 200px;
+    width: 70% !important;
+    max-width: 200px !important;
   }
 
   #banner ul.actions a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: white;
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    color: white !important;
   }
 }
 
