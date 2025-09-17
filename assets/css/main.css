@@ -2124,9 +2124,13 @@ button,
     box-sizing: border-box;
   }
 
-  /* Banner */
+  /* ===== Banner ===== */
+/* ===== Banner Desktop ===== */
 #banner {
-  background-color: #E2725B !important;
+  background-color: #E2725B;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   padding: 6em 4em 4em 4em;
   width: 100%;
   box-sizing: border-box;
@@ -2144,7 +2148,13 @@ button,
   padding-left: 3em;
   padding-right: 20px;
   color: white;
-  box-sizing: border-box;
+}
+
+#banner h1,
+#banner h2,
+#banner p,
+#banner ul.actions a {
+  color: white;
 }
 
 #banner .image {
@@ -2152,60 +2162,63 @@ button,
   min-width: 280px;
 }
 
-#banner .image img {
+#banner img.profile-pic {
   width: 100%;
-  height: auto !important;
-  object-fit: cover !important;
+  height: auto;
+  object-fit: cover;
   object-position: center;
   border-radius: 50%;
 }
 
-#banner h1,
-#banner h2,
-#banner p,
 #banner ul.actions a {
-  color: white !important;
+  text-decoration: none;
 }
 
-/* ===== Mobile ===== */
+/* ===== Banner Mobile ===== */
 @media screen and (max-width: 736px) {
   #banner .inner {
-    flex-direction: column-reverse !important;
-    justify-content: center !important;
-    align-items: center !important;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
 
   #banner .content {
-    width: 100% !important;
-    text-align: center !important;
-    padding: 0 !important;
-    margin-bottom: 1.5em !important;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1.5em;
   }
 
-  #banner .image img {
-    width: 80% !important;
-    max-width: 250px !important;
-    height: auto !important;
-    margin-bottom: 1.5em !important;
+  #banner h1 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+
+  #banner .image {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 1.5em;
   }
 
   #banner ul.actions {
-    flex-direction: column !important;
-    gap: 0.8em !important;
-    align-items: center !important;
-    margin-top: 1em !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: center;
+    margin-top: 1em;
   }
 
   #banner ul.actions li {
-    width: 70% !important;
-    max-width: 200px !important;
+    width: 70%;
+    max-width: 200px;
   }
 
   #banner ul.actions a {
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;
-    color: white !important;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
   }
 }
 
