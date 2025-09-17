@@ -2125,12 +2125,13 @@ button,
   }
 
   /* Banner */
-  #banner {
+  /* ===== Desktop Banner ===== */
+#banner {
   background-color: #E2725B;
-  padding: 6em 4em 4em 4em;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 6em 4em 4em 4em;
   width: 100%;
   box-sizing: border-box;
 }
@@ -2142,6 +2143,7 @@ button,
   padding-left: 3em;
   box-sizing: border-box;
   color: white;
+  text-align: left;
 }
 
 #banner h1 {
@@ -2162,10 +2164,68 @@ button,
   height: auto;
   object-fit: cover;
   object-position: center;
+  border-radius: 50%;
 }
 
 #banner ul.actions a {
   color: white;
+}
+
+/* ===== Mobile Banner (max-width: 736px) ===== */
+@media screen and (max-width: 736px) {
+  #banner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1.5em;
+    background-color: #E2725B;
+  }
+
+  #banner .content {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1.5em;
+  }
+
+  #banner h1 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+
+  #banner .image {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 0 1.5em 0;
+  }
+
+  #banner .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+
+  #banner ul.actions {
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  #banner ul.actions li {
+    width: 70%;
+    max-width: 200px;
+  }
+
+  #banner ul.actions a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white; /* readable text on terracotta */
+  }
 }
 
 /* Footer */
