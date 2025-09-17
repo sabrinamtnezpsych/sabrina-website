@@ -2125,7 +2125,6 @@ button,
   }
 
   /* Banner */
-  /* ===== Banner ===== */
 #banner {
   background-color: #E2725B !important;
   padding: 6em 4em 4em 4em;
@@ -2159,6 +2158,13 @@ button,
   object-fit: cover !important;
   object-position: center;
   border-radius: 50%;
+}
+
+#banner h1,
+#banner h2,
+#banner p,
+#banner ul.actions a {
+  color: white !important;
 }
 
 /* ===== Mobile ===== */
