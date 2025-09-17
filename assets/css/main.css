@@ -2125,7 +2125,7 @@ button,
   }
 
   /* Banner */
-  /* ===== Desktop Banner ===== */
+  /* ===== Banner Desktop ===== */
 #banner {
   background-color: #E2725B;
   display: flex;
@@ -2169,9 +2169,10 @@ button,
 
 #banner ul.actions a {
   color: white;
+  text-decoration: none;
 }
 
-/* ===== Mobile Banner (max-width: 736px) ===== */
+/* ===== Banner Mobile ===== */
 @media screen and (max-width: 736px) {
   #banner {
     flex-direction: column-reverse;
@@ -2179,6 +2180,8 @@ button,
     align-items: center;
     padding: 2em 1.5em;
     background-color: #E2725B;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   #banner .content {
@@ -2186,11 +2189,13 @@ button,
     text-align: center;
     padding: 0;
     margin-bottom: 1.5em;
+    color: white;
   }
 
   #banner h1 {
     font-size: 1.8em;
     margin-bottom: 1em;
+    color: white;
   }
 
   #banner .image {
@@ -2224,7 +2229,7 @@ button,
     display: block;
     width: 100%;
     text-align: center;
-    color: white; /* readable text on terracotta */
+    color: white; 
   }
 }
 
