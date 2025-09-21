@@ -530,3 +530,146 @@ a:hover, a:focus {
 .light-banner .banner-content {
   padding: 40px 60px; /* top/bottom 40px, left/right 60px */
 }
+@media (max-width: 768px) {
+
+  /* ===== General adjustments ===== */
+  body {
+    padding: 0 1em;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  /* ===== Banner ===== */
+  #banner .inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #banner .inner .content {
+    margin-bottom: 1.5em;
+  }
+
+  #banner .inner .image {
+    margin: 1em 0;
+  }
+
+  #banner .inner .image img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* ===== Text block & buttons ===== */
+  .content .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .actions li {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+
+  /* ===== Services Section ===== */
+  #services {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .services-list, .services-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .services-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* ===== Credentials & Certifications Section ===== */
+  .light-banner {
+    padding: 2em 1em;
+  }
+
+  .mini-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .mini-posts article {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .mini-posts article .image img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5em;
+  }
+
+  .mini-posts article p {
+    margin: 0.5em 0 1em 0;
+  }
+
+  /* ===== Get in Touch Section ===== */
+  section > .lang-content p {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+
+  /* ===== Footer ===== */
+  #footer {
+    text-align: center;
+    padding: 2em 1em;
+  }
+
+  #footer ul.icons {
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  #footer ul.icons li {
+    margin: 0 0.3em;
+  }
+
+  /* ===== Header adjustments ===== */
+  #main header h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  /* ===== Adjust spacing between sections ===== */
+  section, .content, .mini-posts {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  /* ===== Make buttons bigger on mobile ===== */
+  .content .actions li a.button.big {
+    font-size: 1.1em;
+    padding: 0.8em 1.2em;
+  }
+
+  /* ===== Reduce spacing for services list items ===== */
+  .services-list ul li {
+    margin-bottom: 0.5em;
+  }
+}
