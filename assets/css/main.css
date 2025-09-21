@@ -673,3 +673,73 @@ a:hover, a:focus {
     margin-bottom: 0.5em;
   }
 }
+@media screen and (max-width: 768px) {
+
+  /* Make banners full-width and adjust padding */
+  #banner, .light-banner {
+    width: 100%;
+    padding: 2em 1em;
+    box-sizing: border-box;
+  }
+
+  /* Banner content alignment */
+  #banner .inner, .light-banner .mini-posts {
+    display: block;
+    text-align: left;
+  }
+
+  #banner .content {
+    margin: 0 0 1em 0;
+  }
+
+  /* Banner buttons */
+  #banner .actions li, #banner .actions li a {
+    display: block;
+    margin-bottom: 0.75em;
+    width: 90%;
+    max-width: 250px;
+  }
+
+  /* Banner image centered */
+  #banner .image {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  #banner .image img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  /* Mini-posts / credentials section */
+  .light-banner .mini-posts article {
+    display: block;
+    margin-bottom: 1.5em;
+  }
+
+  .light-banner .mini-posts article .image {
+    display: block;
+    margin: 0 auto 0.5em auto;
+  }
+
+  /* Left-align all other text content */
+  #main .inner, #services .services-list, #services .services-image, section p, section ul {
+    text-align: left;
+    width: 100%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    box-sizing: border-box;
+  }
+
+  /* Reduce gap between services list and image */
+  #services {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  /* Adjust "Get in touch" section text */
+  section#contact, section.contact {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
