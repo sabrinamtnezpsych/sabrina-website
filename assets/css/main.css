@@ -398,3 +398,135 @@ a:hover, a:focus {
   display: block;
   margin: 0 auto 1em; /* centers the image and adds some space below */
 }
+.logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: inherit; /* keeps your global link style */
+}
+
+.logo i {
+  margin-right: 8px;
+  font-size: 1.3em; /* make the icon slightly bigger than text */
+  color: #f56a6a;   /* pink-ish brand color */
+}
+
+.logo:hover {
+  color: #f56a6a; /* hover effect */
+}
+.instagram-link {
+  color: inherit; /* use your site’s default text color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.instagram-link:hover {
+  color: #f56a6a; /* pink hover */
+}
+
+.instagram-link i {
+  margin-right: 8px; /* little space between icon and text */
+}
+.actions .button {
+  display: block;              /* keeps them stacked vertically */
+  width: fit-content;          /* adjusts to text size, not full width */
+  margin: 12px auto;           /* adds space between buttons and centers them */
+  padding: 12px 24px;          /* makes them a bit bigger */
+  font-size: 1.05em;           /* slightly larger text */
+  border-radius: 8px;          /* rounded corners for style */
+}
+#main .image img {
+  max-width: 320px;   /* adjust this number until it looks “normal” */
+  height: auto;       /* keeps proportions */
+  display: block;
+  margin: 0 auto 20px auto; /* centers the image, adds space below */
+}
+.mini-posts {
+  display: block; /* Stack them normally */
+}
+
+.mini-posts article {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5em; /* spacing between articles */
+  text-align: left;
+}
+
+.mini-posts article .image {
+  margin-right: 1em; /* spacing between image and text */
+}
+
+.mini-posts article .image img {
+  display: block;
+  width: 120px;   /* keep the nice smaller size */
+  height: auto;
+  margin: 0;      /* no centering */
+}
+.contact-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-icons li {
+  margin: 0.5em 0;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* space between icon and text */
+}
+
+.contact-icons i {
+  color: #f56a6a; /* pinkish tone for icons */
+}
+#footer .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em; /* space between items */
+  margin-bottom: 1em;
+  font-size: 0.95em;
+  color: #9fa3a6;
+}
+
+#footer .contact-info p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* space between icon and text */
+}
+
+#footer .contact-info i {
+  color: #f56a6a; /* pink-ish icons to match design */
+  min-width: 18px; /* keeps icons aligned */
+  text-align: center;
+}
+
+/* Links in footer */
+#footer .contact-info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#footer .contact-info a:hover {
+  color: #f56a6a;
+  text-decoration: underline;
+}
+#footer .contact-info i {
+  margin-right: 0.5em;
+  color: #f56a6a; /* optional, pink-ish icon color */
+}
+.light-banner {
+  background-color: #fbe9e7; /* soft, light terracotta */
+  padding: 3em 4em; /* more horizontal padding */
+  border-radius: 8px;
+}
+.light-banner h2 {
+  color: #333;
+}
+.light-banner p {
+  color: #444;
+}
+.light-banner .banner-content {
+  padding: 40px 60px; /* top/bottom 40px, left/right 60px */
+}
